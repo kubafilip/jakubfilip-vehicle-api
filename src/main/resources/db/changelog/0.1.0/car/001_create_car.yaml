@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_create_car
+      author: Jakub Filip
+      comment: Create car table
+      changes:
+        - createTable:
+            tableName: car
+            remarks: car table
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  remarks: id
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: car_PK
+                    remarks: primary key
+
