@@ -12,7 +12,6 @@ spring:
       path: /h2
   datasource:
     url: jdbc:h2:mem:vehicle-db
-    #    url: jdbc:postgresql://localhost:5433/machines-db
     username: sa
     password: sa
 

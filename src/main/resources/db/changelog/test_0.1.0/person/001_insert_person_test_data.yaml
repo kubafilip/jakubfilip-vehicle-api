@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_insert_person_test_data
+      author: Jakub Filip
+      failOnError: true
+      changes:
+        - loadData:
+            commentLineStartsWith: //
+            encoding: UTF-8
+            file: 001_person_test_data.csv
+            onlyUpdate: false
+            primaryKey: id
+            quotchar: "'"
+            relativeToChangelogFile: true
+            separator: ","
+            tableName: person
+            usePreparedStatements: true
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+              - column:
+                  name: name
+                  type: string
+              - column:
+                  name: surname
+                  type: string
+              - column:
+                  name: age
+                  type: number
+              - column:
+                  name: email
+                  type: string

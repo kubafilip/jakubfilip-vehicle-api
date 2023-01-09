@@ -17,4 +17,21 @@ databaseChangeLog:
                     primaryKey: true
                     primaryKeyName: car_PK
                     remarks: primary key
-
+              - column:
+                  name: brand
+                  type: varchar(40)
+                  remarks: car brand
+                  constraints:
+                    nullable: false
+              - column:
+                  name: model
+                  type: varchar(50)
+                  remarks: car model
+                  constraints:
+                    nullable: false
+              - column:
+                  name: person_id
+                  type: uuid
+                  remarks: FK to person
+                  constraints:
+                    nullable: true

@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_create_person
+      author: Jakub_Filip
+      comment: Create table for person
+      labels: init, v.0.1.0
+      changes:
+        - createTable:
+            tableName: person
+            remarks: Create person
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  remarks: id
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: person_PK
+                    remarks: Primary Key
+              - column:
+                  name: name
+                  type: varchar(255)
+                  remarks: name
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: varchar(255)
+                  remarks: surname
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: int
+                  remarks: age
+                  constraints:
+                    nullable: true
+              - column:
+                  name: email
+                  type: varchar(255)
+                  remarks: email
+                  constraints:
+                    nullable: true
