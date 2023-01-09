@@ -2,3 +2,6 @@ databaseChangeLog:
   - include:
       relativeToChangelogFile: true
       file: 001_create_car.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: 002_create_car_constraints.yaml
