@@ -23,12 +23,6 @@ public class SortMetadataDTO {
     }
 
     @NotNull
-//    @Schema(
-//        name = "property",
-//        example = "sort_property",
-//        description = "Sort property",
-//        required = true
-//    )
     public String getProperty() {
         return this.property;
     }
@@ -42,11 +36,6 @@ public class SortMetadataDTO {
         return this;
     }
 
-//    @Schema(
-//        name = "direction",
-//        description = "Sort order",
-//        required = false
-//    )
     public SortMetadataDTO.DirectionEnum getDirection() {
         return this.direction;
     }

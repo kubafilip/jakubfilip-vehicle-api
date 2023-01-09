@@ -14,18 +14,3 @@ databaseChangeLog:
             referencedColumnNames: id
             referencedTableName: person
             validate: true
-#  - changeSet:
-#        id: 002_create_car_constraints_1
-#        author: Jakub_Filip
-#        comments: FK to cluster
-#        changes:
-#            - addForeignKeyConstraint:
-#                  constraintName: car_cluster_FK
-#                  baseColumnNames: cluster_id
-#                  baseTableName: car
-#                  deferrable: false
-#                  initiallyDeferred: false
-#                  onUpdate: RESTRICT
-#                  referencedColumnNames: id
-#                  referencedTableName: cluster
-#                  validate: true
